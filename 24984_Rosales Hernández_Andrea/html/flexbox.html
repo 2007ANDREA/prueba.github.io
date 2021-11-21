@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flexbox</title>
+
+<style>
+	.box-conteiner-flex{
+		background-color: #5895F5;
+		display: flex;
+		margin: 30px 0;
+	}
+	.box-conteiner-flex, .box-conteiner-flex-2, .box-conteiner-flex-3{
+		width: 400px;
+		background-color:#D1CECE;
+		margin: 10px;
+		padding: 20px;
+		font-size:30px;
+	}
+	
+	.box-conteiner-flex-3>div{
+			width: 300px;
+	}
+	.box-conteiner-flex-2>div{
+		background-color:#5865F5;
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.box-conteiner-flex-3{
+		background-color: #5865F5;
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	</style>
+</head>
+	
+<body>
+	<header>Flexbox</header>
+	<nav></nav>
+	<main>
+		<section>
+			<h2>Flexbox</h2>
+	<div class="box-conteiner-flex">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		</div>
+		</section>
+		
+		<section>
+			<h2>Uso de la propiedad flex-direction:column, reverse row, row reverse</h2>
+			<div class="box-conteiner-flex-2">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		</div>
+		</section>
+		
+				<section>
+			<h2>Uso de la propiedad flex-direction:wrap</h2>
+			<div class="box-conteiner-flex-3">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+	    <div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		</div>
+		</section>
+	</main>
+	<footer></footer>
+</body>
+</html>

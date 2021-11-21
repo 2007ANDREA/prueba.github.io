@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tablas en html</title>
+	<style type="text/css">
+ *{
+			margin: 0
+			margin: 0:		    
+		}
+		h1{
+			color: #5C5489
+			font-size: 80px;
+		}
+		h2{
+			color:#5C5489;
+			font-size: 30px;
+		}
+		header, footer, main, nav{
+			margin:0 auto; /*Centra la caja automaticamente en horizontal*/
+            width: 90%;
+			padding: 20px;
+ }
+		header, footer{
+			height: 50px;
+			padding: 20px;
+			color: #FABC28;
+			text-align: center;
+			background-color: #2A2642;
+		}
+		nav{
+			background-color: #ECBB11;
+			color: #FFFFFF;
+			height: 70px;
+		}
+		
+		nav ul{
+    display: flex;
+}
+nav ul li{
+    width: 200px;
+    list-style-type: none;
+    text-align: center;	
+    
+}
+		main{
+			background-color: #2A2642;
+		}
+		section{
+			background-color: #FABC28;
+			margin: 35px;
+			padding: 35px;
+			color: #151723;
+		}
+		footer{
+			height: 30px;
+			background-color: #151723;
+			text-align: center;
+			padding: 20px;
+		}
+		table{
+			border-collapse: collapse;
+		}
+		th, td{
+			padding: 10px;
+		}
+		th{
+			text-align: center;
+			background-color: #2A2642;
+			color: #E2D5D0;
+		}
+		td{
+			background-color: #E2D5D0;
+			color: #2A2642;
+		}
+		#t01{
+			border: double 4px #8F17BC
+		}
+		#t01 th{
+			background-color: #EB0FB9;
+		}
+		#t01 td{
+			background-color: #f8d8d8;
+		}
+		#t02{
+			border: double 4px #8F17BC
+		}
+		#t02 th{
+			background-color: #C810F1;
+		}
+		#t02 td{
+			background-color: #FF72F1;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>TABLAS EN HTML</h1>
+	</header>
+	<nav>
+			<ul>
+			<li><a href="tablas 2.html">Tabla</a></li>
+			<li><a href="enlaces.html">Enlaces</a></li>
+			<li><a href="Listas.html">Listas</a></li>
+			<li><a href="Imagenes.html">Imagenes</a></li>
+			<li><a href="Audio.html">Audio</a></li>
+			<li><a href="videos.html">Video</a></li>
+			<li><a href="formulario.html">Formulario </a></li>
+			<li><a href="Contraseña.html">Musica Encuesta</a></li>
+			<li><a href="Fexbox.html">Flexbox</a></li>
+		    <li><a href="Día de muertos.html">Día de Muertos</a></li>
+			<li><a href="animacion.html">Animación</a></li>
+		</ul>
+	
+	</nav>
+	<main>
+	  <section>
+			<h2>Tabla simple</h2>
+			<table border="1" style="width: 70%;text-align: center;">
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Email</th>
+						<th>Telefono</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Maria Jimenez</td>
+						<td>maria.@gmail.com</td>	
+						<td>2481254678</td>	
+					</tr>
+					<tr>
+						<td>Juana Lopeez</td>
+						<td>juaia.@gmail.com</td>	
+						<td>248122438</td>	
+					</tr>
+					<tr>
+						<td>Maria Jimenez</td>
+						<td>maria.@gmail.com</td>	
+						<td>2481254678</td>	
+					</tr>
+					<tr>
+						<td>Carma Pulido</td>
+						<td>camili@gmail.com</td>	
+						<td>2482454575</td>	
+					</tr>
+				</tbody>
+				<tfoot></tfoot>	
+			</table>	
+		</section>
+	  <section>
+			<h2>Tabla con celda que abarca dos columnas	</h2>
+			<table border="1" style="width: 70%; text-align: center;">
+				<thead>
+				<tr>
+					<th>Nombre</th>
+					<th colspan="2">Telefonos</th>
+				</tr>	
+		</thead>
+		<tbody>
+				<tr>
+					<td>Pamelaa</td>
+					<td>249245677</td>
+					<td>249256980</td>
+			</tr>
+				<tr>
+					<td>Agata</td>
+					<td>249515627</td>
+					<td>249427997</td>
+			</tr>	
+				<tr>
+					<td>Ignacio</td>
+					<td>249615613</td>
+					<td>249087963</td>
+			</tr>
+				</tbody>
+				<tfoot></tfoot>
+			</table>
+		</section>
+      <section>
+		  <h2>Tabla de diferenciaciòn</h2>
+			<table width="600" border="1" id="t01">
+				<thead>
+					<tr>
+						<th scope="col">Nombre</th>
+						<th scope="col">Apellidos</th>
+						<th scope="col">Edad</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Andrew</td>
+						<td>Pereez</td>
+						<td>28</td>
+					</tr>
+					<tr>
+						<td>Maggui</td>
+						<td>Gomez</td>
+						<td>55</td>
+					</tr>
+					<tr>
+						<td>Pancho</td>
+						<td>Delgado</td>
+						<td>65</td>
+					</tr>
+		</tbody>
+		  </table>
+				</section>	
+      <section>
+		  <h2>Tabla diferente</h2>
+			<table width="600" border="2" id="t02">
+				<thead>
+					<tr>
+						<th scope="col">Nombre</th>
+						<th scope="col">Apellidos</th>
+						<th scope="col">Edad</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Andrew</td>
+						<td>Pereez</td>
+						<td>28</td>
+					</tr>
+					<tr>
+						<td>Maggui</td>
+						<td>Gomez</td>
+						<td>55</td>
+					</tr>
+					<tr>
+						<td>Pancho</td>
+						<td>Delgado</td>
+						<td>65</td>
+					</tr>
+		</tbody>
+		  </table>
+				</section>	
+	</main>
+	<footer>
+		<h5>Elaborado por:Andrea Rosales Hernández</h5>
+	
+	</footer>
+</body>
+</html>

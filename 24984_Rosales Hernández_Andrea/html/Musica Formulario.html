@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>encuesta musica</title>
+<link href="../css/style_musica.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header><h1>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  MUSICA</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#enlace1">Personal</a></li>
+			<li><a href="#enlace2">Color</a></li>
+			<li><a href="#enlace3">Historia</a></li>
+			<li><a href="#enlace4">Genero</a></li>
+			<li><a href="#enlace5">Preferencias</a></li>
+			<li><a href="#enlace6">Gustos</a></li>
+			<li><a href="#enlace7">Cantante</a></li>
+			<li><a href="#enlace8">Album</a></li>
+		    <li><a href="#enlace4">Contacto</a></li>
+	  </ul>
+	
+</nav>
+<main>
+
+<body>
+	<section>
+	<h2 id="enlace1">Personal</h2>
+	<p>Contesta las siguientes preguntas sobre ti:</p>
+	<form action="action_page.html"><br>
+  <label for="fname">Nombre:</label><br>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="name">Apellido:</label><br>
+  <input type="text" id="name" name="name" ><br><br>
+		<p>Sexo:
+		<input type="radio" id="masculino" name="gender" value="masculino">
+		<label for="masculino">Hombre</label>
+		<input type="radio" id="femenino" name="gender" value="femenino">
+		<label for="femenino">Mujer</label>
+        </p>
+</form> 
+	</section>
+	
+	<section>
+		<h2  id="enlace2">Color</h2>
+		<p>¿Cual es el color que más te representa?</p>
+		<label for="Color">Elige un color:</label>
+		<input type="color">
+	
+	</section>
+
+  <section>
+	  <h2 id="enlace3">Historia</h2>
+	<p>¿En que fecha fue el primer concierto de The Beatles?</p>
+		<form>
+		<label for="date">Fecha:</label>
+		<input type="date" id="date" name="date" value="Fecha">
+		</form>
+	</section>
+	
+	<section>
+		<h2 id="enlace4">Genero</h2>
+		<p>¿Cuál es tú genero de musica favorito?</p><br>
+		<input type="checkbox" id="vehicle1" name="vehicle1" value="Pop">
+		<label for="vehicle1">Pop</label><br><br>
+		<input type="checkbox" id="vehicle2" name="vehicle2" value="Rock and Roll">
+		<label for="vehicle2">Rock and Roll</label><br><br>
+		<input type="checkbox" id="vehicle3" name="vehicle3" value="Jazz">
+		<label for="vehicle3">Jazz</label><br><br>
+		<input type="checkbox" id="vehicle4" name="vehicle4" value="Blues">
+		<label for="vehicle4">Blues</label><br><br>
+		<input type="checkbox" id="vehicle5" name="vehicle5" value="Country">
+		<label for="vehicle5">Country</label><br><br>
+		<input type="checkbox" id="vehicle6" name="vehicle6" value="Electronica">
+		<label for="vehicle6">Electronica</label><br><br>
+	</section>
+	
+	<section>
+		<h2  id="enlace5">Preferencia</h2>
+		<p>Elige como prefieres escuchar musica:</p>
+		<label for="music">Opciones:</label>
+		<select id="music" name="Music">
+		<option for="Digital">Digital</option>
+		<option for="Discos">Discos</option>
+		<option for="Vinilos">Vinilos</option>
+		<option for="Conciertos">Conciertos</option>
+		</select>
+	</section>
+
+	<section>
+		<h2  id="enlace6">Rango de gustos</h2>
+		<p>Indique cuanto te gusta escuhar musica (Poco, Mucho, Bastante):</p>
+		<form>
+		<input type="range" name="rango" min="1" max="3" list="lista-rango">
+		<datalist id="lista-rango">
+			<option value="1" label="Poco">Poco</option>
+		    <option value="2" label="Mucho">Mucho</option>
+		    <option value="3" label="Bastate">Bastante</option>
+		</datalist>
+	</form>
+ </section>
+	
+	<section>
+		<h2  id="enlace7">Cantante Favorito</h2>
+		<p>Tiene un cantante de musica o banda favorito:</p>
+		<p>
+		<input type="radio" name="boton" value="1">Si<br><br>
+		<input type="radio" name="boton" value="2">No<br><br>
+		<input type="radio" name="boton" value="0" checked> Ninguno<br><br>
+		Escribe su nombre: <br>
+		<input type="text" name="nombre"><br><br>
+		</p>
+    </section>
+	
+	<section>
+		<h2  id="enlace8">Album</h2>
+		<p>Selecciona la imagen de tu album favorito:</p>
+		<input type="file" name="Imagen">
+	</section>
+	
+  <section>
+	<h2 id="enlace9">Contacto</h2>
+	<p>Escribe tus datos de contacto:</p>
+	<form action="action_page.html">
+    <label for="textfield">Nombre:</label><br>
+    <input type="text" name="textfield" id="textfield"><br><br>
+    <label for="email">Email:</label><br>
+    <input type="text" name="textfield" id="textfield"><br><br>
+  <label for="textarea">Mensaje:</label><br>
+    <input type="text" name="textfield" id="textfield"><br><br>
+<br>
+
+	<input type="submit" value="Enviar">
+	  </form>
+	</section>
+	
+	
+</main>
+		<footer>
+	  <h5>Elaborado por: Andrea Rosales Hernández</h5>
+</footer>
+</body>
+</html>

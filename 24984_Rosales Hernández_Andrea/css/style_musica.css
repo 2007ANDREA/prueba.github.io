@@ -1,0 +1,131 @@
+@charset "utf-8";
+header {
+    background-color: #006699;
+    Color: #FFF9F9;
+    font-size: 30px;
+    height: 83px;
+    text-indent: 92px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+header, nav, main, footer {
+    margin: auto;
+    width: 1025px;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    height: 187px;
+    max-height: none;
+    text-align: left;
+}
+footer {
+    height: 70px;
+    background-color: #006699;
+    margin-top: auto;
+    line-height: normal;
+    text-align: center;
+}
+footer h5 {
+    color: #FFF8F8;
+    font-size: 17px;
+    text-align: center;
+	padding: 26px;
+}
+
+
+body main section {
+    background-color: #CCCCCC;
+    margin-top: 50px;
+    padding: 20px;
+    margin-bottom: 50px;
+    border: thick dotted #006699;
+    text-align: left;
+}
+a:hover {
+    color: #63CAA7;
+    font-weight: bolder;
+    font-size: large;
+}
+a:link {
+    color: #0E3B96;
+    font-weight: bolder;
+    text-align: center;
+}
+a:visited {
+	color: #C9284F;
+	font-weight: bolder;
+}
+main {
+    height: auto;
+    background-color: #95C7D4;
+    padding: 40px;
+}
+nav{
+    height: auto;
+    background-color: #FFD57E;
+}
+	*{
+		padding: 0;
+		margin: 0;
+		-wekit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+body nav ul{
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+}
+nav ul li{
+	display: inline-block;
+	margin-left: auto;
+	padding: 20px;
+	margin-right: 10px;
+	color: #FFFFFF;
+	font-weight: bolder;
+}
+input[type=button], input[type=submit]{
+	background-color: #AF9600;
+	color: white;
+	padding: 15px;
+	margin: 15px 0;
+	border-radius: 25px 
+}
+
+h2{
+    color: #DE744C;
+    font-style: italic;
+    text-decoration: underline;
+    text-indent: 43px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	padding: 10px	
+}
+
+p{
+	padding: 10px
+}
+
+br{
+	padding: 5px
+}
+
+input[type=text]{
+	width: 40%;
+	padding:5px;
+	margin: 5px 0;
+}
+
+input[type=radio]{
+    color: #DD3033;	
+    padding:5px;
+	margin: 5px 0;
+}
+h1{
+    text-align: left;
+	padding: 53px;
+}
